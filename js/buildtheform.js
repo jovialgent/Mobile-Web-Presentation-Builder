@@ -1,4 +1,5 @@
-var socket = io.connect('http://mscd118o:3002');
+var host = 'localhost' 
+  , socket = io.connect('http://'+host+':3002');
 var slide_type = {
 	"text_slide" : function(slide_num, question){
 		var temp = "";
