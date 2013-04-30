@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # reveal.js [![Build Status](https://travis-ci.org/hakimel/reveal.js.png?branch=master)](https://travis-ci.org/hakimel/reveal.js)
 
 A framework for easily creating beautiful presentations using HTML. [Check out the live demo](http://lab.hakim.se/reveal-js/).
@@ -467,3 +468,9 @@ MIT licensed
 
 Copyright (C) 2013 Hakim El Hattab, http://hakim.se
 
+=======
+Mobile-Web-Presentation-Builder
+===============================
+
+This app will build a presentation tool utilizing NodeJs, socket.io, and Reveal JS. 
+>>>>>>> 22d8b90dce460df51232cf9da74e023196859ebe
