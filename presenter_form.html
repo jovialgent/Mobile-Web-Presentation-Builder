@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>
+    </title>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/codiqa-cdn/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <link rel="stylesheet" href="my.css" />
+    <script src="https://s3.amazonaws.com/codiqa-cdn/jquery-1.7.2.min.js">
+    </script>
+    <script src="https://s3.amazonaws.com/codiqa-cdn/mobile/1.2.0/jquery.mobile-1.2.0.min.js">
+    </script>
+    <script src="my.js">
+    </script>
+    <!-- User-generated css -->
+    <link rel="stylesheet" href="themes/MSUDenver_Training.min.css" />
+    <style>
+
+    .blue{
+    color:blue;
+    background:cyan;
+ }
+ </style>
+ <!-- User-generated js -->
+ <script src="/socket.io/socket.io.js"> 
+ </script>
+ <script>
+ try {
+
+    var current_section = 0;
+    var current_slide = 0;
+    var message = 0;
+    var ask_later = 0;
+    var ask_later_queue = {};
+    var ask_later_messages = [];
+    var which_slide = "Section: " + current_section + " Slide: " + current_slide; 
+    var host = 'localhost';
+    var socket = io.connect('http://'+host+':3000');
+    var slides = [];
+    var notes = [[""],["\t Here some notes.\n And here are some more. ", "And some more on this slide", "And yet some more"], ["",""], [], [], [], []];
+    var wait = true;
+
+
+
+    socket.on('send_max_slides', function(max_slides){
+        slides= max_slides['slides'];
+        console.log(slides[0]);
+
+    });
+
+    socket.on('get_slide_title', function(current_title, next_title){
+        $('#current_slide_title').text(current_title);
+        $('#next_slide_title').text(next_title);
+    });
+
+    socket.on('wait', function(){
+        $('#radio9').attr("checked", !wait).checkboxradio("refresh");
+        $("#radio10").attr("checked", wait).checkboxradio("refresh");
+
+    });
+
+    socket.on('receive_message', function(received, username, department){
+        message++;
+            $('#messages_receive').append('<a id="message'+message+'" data-role="button" href="#page3" data-icon="delete">' + received);
+            $('#message'+message).button();
+            $('#message'+message).bind('click', function(){
+                var temp = $(this).text();
+                $(this).remove();
+                $('#messages_answered').append(temp + '<br>');
+
+            });
+    });
+
+    socket.on("ask_later_sent", function(username, department, content){
+
+        ask_later++;
+          $('#ask_later').append('<strong>'+username+' from '+department+' asked: </strong><em>' + content + '</em><br><br>');
+          
+
+    });
+
+    $(function() {
+
+        function reset_points(){
+            for(var i = 1; i < 6; i++){
+            $('#trainer_'+i+' input[type = "text"]').val('0');
+            $('#content_'+i+' input[type = "text"]').val('0');
+        }
+        }
+
+        function set_presentation_notes(section, slide){
+            $('#presenter_notes textarea').text("");
+            $('#presenter_notes textarea').text(notes[section][slide]);
+        }
+
+        socket.on('reset_points', function(){
+            reset_points()
+
+        });
+
+        function need_to_wait(){
+            return $("#radio9").is(':checked');
+        };
+
+        socket.on('get_trainer_evaluation', function(eval){
+            console.log("Got to trainer");
+
+            var current_value = $('#trainer_'+eval+' input[type = "text"]').val();
+            current_value++;
+            
+            $('#trainer_'+eval+' input[type = "text"]').val(current_value);
+
+        });
+
+        socket.on("get_content_evaluation", function(content){
+            var current_value = $('#content_'+content+' input[type = "text"]').val();
+            current_value++;
+            
+            $('#content_'+content+' input[type = "text"]').val(current_value);
+        });
+
+
+        $("#up").bind("click", function(){
+
+
+            if(current_slide >= 1 && need_to_wait()){
+
+                current_slide--;
+                which_slide = "Section: " + current_section + " Slide: " + current_slide;
+                console.log("Button pressed: up " + which_slide );
+                set_presentation_notes(current_section, current_slide);
+                socket.emit('go_to_slide', current_section, current_slide);
+
+            }
+
+        });
+
+        $("#left").bind("click", function(){
+            if(current_section >= 1 && need_to_wait()){
+                current_section --;
+                current_slide = 0;
+                which_slide = "Section: " + current_section + " Slide: " + current_slide;
+                console.log("Button pressed: left " + which_slide );
+                set_presentation_notes(current_section, current_slide);
+                socket.emit('go_to_slide', current_section, current_slide);
+            }
+
+        });
+
+        $("#down").bind("click", function(){
+            if(current_slide < slides[current_section] && need_to_wait()){
+                current_slide++;
+                which_slide = "Section: " + current_section + " Slide: " + current_slide;
+                console.log("Button pressed: down " + which_slide);
+                set_presentation_notes(current_section, current_slide);
+                socket.emit('go_to_slide', current_section, current_slide);
+            }
+
+        });
+
+        $("#right").bind("click", function(){
+            if(current_section < slides.length-1 && need_to_wait()){
+                current_section++;
+                current_slide = 0;
+                which_slide = "Section: " + current_section + " Slide: " + current_slide;
+                console.log("Button pressed: right " + which_slide);
+                set_presentation_notes(current_section, current_slide);
+                socket.emit('go_to_slide', current_section, current_slide);
+            }
+        });
+
+        $('#add_check_box').bind('click', function(){
+            
+        });
+
+
+
+    });
+
+} catch (error) {
+    console.error("Your javascript has an error: " + error);
+}
+</script>
+</head>
+<body>
+    <!-- Home -->
+    <div data-role="page" id="page1">
+        <div data-theme="a" data-role="header">
+            <h3 id="admin_title">
+                Presenter
+            </h3>
+            <div data-role="navbar" data-iconpos="left">
+                <ul>
+                    <li>
+                        <a href="#page1" data-transition="fade" data-theme="" data-icon="home" class="ui-btn-active ui-state-persist">
+                            Navigation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page2" data-transition="fade" data-theme="" data-icon="check">
+                            Notes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page3" data-transition="fade" data-theme="" data-icon="info">
+                            Messages
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content">
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                </div>
+                <div class="ui-block-b">
+                    <a id="up" data-role="button" href="#page1" data-icon="arrow-u" data-iconpos="top">
+                    </a>
+                </div>
+                <div class="ui-block-c">
+                </div>
+                <div class="ui-block-a">
+                    <a id="left" data-role="button" href="#page1" data-icon="arrow-l" data-iconpos="top">
+                    </a>
+                </div>
+                <div class="ui-block-b">
+                    <div data-role="fieldcontain" id="wait">
+                        <fieldset data-role="controlgroup" data-mini="false" >
+                           <legend>
+                           </legend>
+                           <input id="radio9" name="t" value="1" type="radio" />
+                           <label for="radio9">
+                            Go
+                        </label>
+                        <input id="radio10" name="t" value="2" type="radio" />
+                        <label for="radio10">
+                            Wait
+                        </label>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="ui-block-c">
+                <a id="right"  data-role="button"  href="#page1" data-icon="arrow-r" data-iconpos="top">
+                </a>
+            </div>
+            <div class="ui-block-a">
+            </div>
+            <div class="ui-block-b">
+                <a id="down" data-role="button" href="#page1" data-icon="arrow-d" data-iconpos="bottom">
+                </a>
+            </div>
+            <div class="ui-block-c">
+            </div>
+        </div>
+        <ul data-role="listview" data-divider-theme="b" data-inset="true" >
+            <li data-role="list-divider" role="heading">
+                Current_Slide
+            </li>
+            <li data-theme="c" id="current_slide_title">
+
+            </li>
+        </ul>
+        <ul data-role="listview" data-divider-theme="b" data-inset="true">
+            <li data-role="list-divider" role="heading" d="#next_slide_title">
+                Next Slide
+            </li>
+            <li data-theme="c" id="next_slide_title">
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="page2">
+ <div data-theme="a" data-role="header">
+            <h3 id="admin_title">
+                Presenter
+            </h3>
+            <div data-role="navbar" data-iconpos="left">
+                <ul>
+                    <li>
+                        <a href="#page1" data-transition="fade" data-theme="" data-icon="home" class="ui-btn-active ui-state-persist">
+                            Navigation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page2" data-transition="fade" data-theme="" data-icon="check" focused="true">
+                            Notes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page3" data-transition="fade" data-theme="" data-icon="info">
+                            Messages
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <div data-role="content">
+                <div data-role="fieldcontain" id="presenter_notes">
+                    <fieldset data-role="controlgroup">
+                        <label for="presenter_notes">
+                            Presenter Notes:
+                        </label>
+                        <textarea name="" id="presenter_notes" placeholder="" >
+                        </textarea>
+                    </fieldset>
+                </div>
+                <h3>
+                    Your Rating Counts
+                </h3>
+                <div class="ui-grid-d">
+                    <div class="ui-block-a">
+                        <div data-role="fieldcontain" id="trainer_1">
+                            <fieldset data-role="controlgroup">
+                                <label for="trainer_1">
+                                    1 pts:
+                                </label>
+                                <input name="" id="trainer_1" placeholder="" value="0" type="text" />
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="ui-block-b">
+                        <div data-role="fieldcontain" id="trainer_2">
+                            <fieldset data-role="controlgroup">
+                                <label for="trainer_2">
+                                    2 pts:
+                                </label>
+                                <input name="" id="trainer_2" placeholder="" value="0" type="text" />
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="ui-block-c">
+                        <div data-role="fieldcontain" id="trainer_3">
+                            <fieldset data-role="controlgroup">
+                                <label for="trainer_3">
+                                    3 pts:
+                                </label>
+                                <input name="" id="trainer_3" placeholder="" value="0" type="text" />
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="ui-block-d">
+                        <div data-role="fieldcontain" id="trainer_4">
+                            <fieldset data-role="controlgroup">
+                                <label for="trainer_4">
+                                    4 pts:
+                                </label>
+                                <input name="" id="trainer_4" placeholder="" value="0" type="text" />
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="ui-block-e">
+                        <div data-role="fieldcontain" id="trainer_5">
+                            <fieldset data-role="controlgroup">
+                                <label for="trainer_5">
+                                    5 pts:
+                                </label>
+                                <input name="" id="trainer_5" placeholder="" value="0" type="text" />
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <h3>
+                    Content Rating Counts
+                </h3>
+                <div class="ui-grid-d">
+                    <div class="ui-block-a">
+                        <div data-role="fieldcontain" id="content_1">
+                            <fieldset data-role="controlgroup">
+                                <label for="content_1">
+                                    1 pts:
+                                </label>
+                                <input name="" id="content_1" placeholder="" value="0" type="text" />
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="ui-block-b">
+                        <div data-role="fieldcontain" id="content_2">
+                            <fieldset data-role="controlgroup">
+                                <label for="content_2">
+                                    2 pts:
+                                </label>
+                                <input name="" id="content_2" placeholder="" value="0" type="text" />
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="ui-block-c">
+                        <div data-role="fieldcontain" id="content_3">
+                            <fieldset data-role="controlgroup">
+                                <label for="content_3">
+                                    3 pts:
+                                </label>
+                                <input name="" id="content_3" placeholder="" value="0" type="text" />
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="ui-block-d">
+                        <div data-role="fieldcontain" id="content_4">
+                            <fieldset data-role="controlgroup">
+                                <label for="content_4">
+                                    4 pts:
+                                </label>
+                                <input name="" id="content_4" placeholder="" value="0" type="text" />
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="ui-block-e">
+                        <div data-role="fieldcontain" id="content_5">
+                            <fieldset data-role="controlgroup">
+                                <label for="content_5">
+                                    5 pts:
+                                </label>
+                                <input name="" id="content_5" placeholder="" value="0" type="text" />
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+<div id="page3">
+ <div data-theme="a" data-role="header">
+            <h3 id="admin_title">
+                Presenter
+            </h3>
+            <div data-role="navbar" data-iconpos="left">
+                <ul>
+                    <li>
+                        <a href="#page1" data-transition="fade" data-theme="" data-icon="home" class="ui-btn-active ui-state-persist">
+                            Navigation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page2" data-transition="fade" data-theme="" data-icon="check" focused="true">
+                            Notes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page3" data-transition="fade" data-theme="" data-icon="info">
+                            Messages
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content">
+                <ul id="messages" data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Question Queue
+                    </li>
+                    <li id='messages_receive' data-theme="c">
+                        
+                    
+                    </li>
+                    <li data-role="list-divider" role="heading">
+                        Question Answered
+                    </li>
+                    <li id='messages_answered' data-theme="c">
+                         
+                    
+                    </li>
+                    <li data-role="list-divider" role="heading">
+                        Ask Later Queue
+                    </li>
+                    <li id='ask_later' data-theme="c">
+                        
+                    
+                    </li>
+
+                </ul>
+            </div>
+</body>
+</html>
