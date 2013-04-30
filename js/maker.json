@@ -1,0 +1,72 @@
+{
+	"data":{
+		"initialize":{
+			"host" : "localhost",
+			"port" : "3000",
+			"presentation_title" : "Change The Name",
+			"author" : ""
+			},
+
+			"section1":{
+				"section1_slide0" :{
+					"header": "New Title",
+					"text": "This is a new text",
+					"unordered_lists": ["Object1"],
+					"ordered_lists": [],
+					"img" : "",
+					"video": "",
+					"links": "",
+					"notes": "Sample Notes",
+					"link_mobile": ["www.google.com"],
+					"link_description_mobile": ["www.google.com"],
+					"presenter_notes": "Note 1",
+					"slide_type": "regular"
+					},  
+					"section1_slide1" :{
+						"header": "Testing the Text Input",
+						"text": "This is a new text",
+						"unordered_lists": [],
+						"ordered_lists": ["Step 1", "Step 2", "Step 3"],
+						"img" : "",
+						"video": "",
+						"links": "",
+						"notes": "Sample Notes 1",
+						"link_mobile": ["http://www.facebook.com/"],
+						"link_description_mobile": ["http://www.facebook.com/"]
+						,"presenter_notes": "Note 2"
+						,"slide_type": "text"
+					}
+					},
+					"section2":{
+						"section2_slide0" :{
+							"header": "Section 2",
+							"text": "This is a new text",
+							"unordered_lists": [],
+							"ordered_lists": [],
+							"img" : "http://25.media.tumblr.com/3ed3c2bcc80bf93d953e9d7eaa6a5113/tumblr_mlb9tlppPQ1qb8i6wo1_500.png",
+							"video": "",
+							"links": "",
+							"notes": "Sample Notes 2",
+						    "link_mobile": [],
+						"link_description_mobile": []
+						,"presenter_notes": "Note 3"
+						,"slide_type": "yes_or_no"
+							},
+							"section2_slide1" :{
+								"header": "face",
+								"text": "",
+								"unordered_lists": [],
+								"ordered_lists": [],
+								"img" : "",
+								"video": "xdE1JCEKtg4bbb",
+								"links": "",
+								"notes": "Sample Notes 3",
+						        "link_mobile": ["http://www.facebook.com/"],
+						"link_description_mobile": ["http://www.facebook.com/"],
+						"presenter_notes": "Note 4"
+						,"slide_type": "text"
+							}
+						}
+					}
+
+				}

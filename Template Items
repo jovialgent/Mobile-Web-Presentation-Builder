@@ -1,0 +1,483 @@
+//SECTION 1 0
+<h2 id="slide10">Site  Manager Tips and Tricks</h2>
+<div>This training will cover advanced topics for Site Manager</div>
+
+/* SECTION 2 0
+ * SHOULD WE ELIMINATE INCLUDING TEXT BELOW THE HEADIING ONE?
+ */
+<h2 id="slide20">Create a Link Column</h2>
+<div>This section will cover how to create a link column</div>
+<a href = 'www.msudenver.edu/sm/' > Site Manager Log In </a>  
+
+//Section 2 Slide 1
+<h2 id="slide21">Step 1: Logon To Site Manager</h2>
+<ul>
+<li>In your important links choose Site Manager Log In</li>
+<li>Logon to your Site Manager Account</li>
+</ul>
+	<a href = 'www.msudenver.edu/sm/' > Site Manager Log In </a>  
+<a href = 'www.msudenver.edu/sm/' > Site Manager Log In </a>  
+
+//Section 22
+<h2 id="slide22">Step 2: Create a Sub Section</h2>
+<ul>
+<li>Locate your department's 'ROOT SECTION'</li>
+<li>Place your cursor over the 'SECTION MENU' or 'GOLD SQUARE' located to the right of your 'ROOT SECTION'</li>
+<li>Choose 'ADD SECTION' from the dropdown command list</li>
+</ul>
+
+//IMAGE FOR SECTION 22 (BELOW TEXT)
+<img src = 'http://www.msudenver.edu/media/content/technologytraining/sitemanager/socialmedialinks/img2-550x226.png'>
+
+//SECTION 23
+<h2 id="slide23">Step 3: Add Section, Enter Details</h2>
+<div>Under the General Tab, do the following:</div>
+<ul>
+<li>In NAME FIELD enter 'LINK COLUMN'</li>
+<li>Uncheck the 'SHOW IN NAVIGATION?' check box</li>
+<li>Click 'ADD'</li>
+</ul>
+
+//IMAGE FOR 23 BELOW TEXT
+<img src = 'http://www.flickr.com/photos/94593467@N02/8613351209/'>
+
+//SECTION 3 0
+<h2 id="slide30">Create A Right Column</h2>
+<a href = 'www.msudenver.edu/sm/' > Site Manager Log In </a>  
+
+//Section 3 1
+<h2 id="slide31">Step One: Logon To Site Manager</h2>
+<ul>
+<li>In your important links choose Site Manager Log In</li>
+<li>Logon to your Site Manager Account</li>
+</ul>
+<a href = 'www.msudenver.edu/sm/' > Site Manager Log In </a>  
+
+//SECTION 3 2
+<h2 id="slide32">Step 2: Create a Sub Section</h2>
+<ul>
+<li>Locate your department's 'ROOT SECTION'</li>
+<li>Place your cursor over the 'SECTION MENU' or 'GOLD SQUARE' located to the right of your 'ROOT SECTION'</li>
+<li>Choose 'ADD SECTION' from the dropdown command list</li>
+</ul>
+
+//SECTION 3 3
+<h2 id="slide33">Step 3: Add Section, Enter Details</h2>
+<div>Under the General Tab, do the following:</div>
+<ul>
+<li>In NAME FIELD enter 'RIGHT COLUMN'</li>
+<li>Uncheck the 'SHOW IN NAVIGATION?' check box</li>
+<li>Click 'ADD'</li>
+</ul>
+<img src = 'http://www.flickr.com/photos/94593467@N02/8614524268/'>
+
+//SECTION 4 0
+<h2 id="slide40">Working With Social Media Links</h2>
+<div>Now that we know how to create link column's we will use them to add Social Media Links to your Department Webpage</div>
+<a href = 'www.msudenver.edu/sm/' > Site Manager Log In </a> <br> <a href = 'www.msudenver.edu/socialmedia/' > MSU Denver Social Media HomePage </a>
+
+//SECTION 4 1
+<h2 id="slide41">Step One: Logon to Site Manager</h2>  
+<ul>
+<li>In your important links choose Site Manager Log In</li>
+<li>Logon to your Site Manager Account</li>
+</ul>
+<a href = 'www.msudenver.edu/sm/' > Site Manager Log In </a> 
+
+//SECTION 4 2 
+<h2 id="slide42">Step Two: Create Link Column</h2>
+<div>Create a Link Column, if not already done</div>
+//SECTION 4 3
+<h2 id="slide43">Step Three: Add Content</h2>
+<ul>
+<li>Find the 'Link Column' you created</li>
+<li>Place your cursor over the 'SECTION MENU' or 'GOLD SQUARE' located to the right of your 'LINK COLUMN'</li>
+<li>Choose 'ADD CONTENT'from the dropdown menu</li>
+</ul>
+
+//SECTION 4 4 
+<h2 id="slide44">Step Four: Add Department Social Links Page</h2>
+<div>From the 'CHOOSE A CONTENT TEMPLATE' page choose 'DEPARTMENT SOCIAL LINK'</div>
+
+//SECTION 4 5
+<h2 id="slide45">Step Five: Modify Social Media Template</h2>
+<ul>
+<li>In the 'NAME' field enter a name for your 'Department Social Links' Page (This will only appear in your Site Structure)</li>
+<li>Paste the appropriate URL's into the associated URL box</li>
+<li>'PREVIEW' the page to make sure all URL's work</li>
+<li>Click Add/Add&Approve/Save As Draft</li>
+</ul>
+
+\\SECTION 5 0
+<h2 id="slide50">Create A Highlight Box</h2>
+
+\\SECTION 5 1
+<h2 id="slide51">Step One: Logon to Site Manager</h2>  
+<ul>
+<li>In your important links choose Site Manager Log In</li>
+<li>Logon to your Site Manager Account</li>
+</ul>
+<a href = 'www.msudenver.edu/sm/' > Site Manager Log In </a> 
+
+//SECTION 5 2
+<h2 id="slide52">Step Two</h2>
+<div>In your Site Structure find the section you wish to create the Highlight Box in</div>
+
+//SECTION 5 3
+<h2 id="slide53">Step Three: Add Content</h2>
+<ul>
+<li>Move your cursor over to the section's 'SECTION MENU'</li>
+<li>Choose 'ADD CONTENT' from the drop down list</li>
+</ul>
+
+//SECTION 5 4 
+<h2 id="slide54">Step Four: Choose Content Template</h2>
+<ul>
+<li>From the 'CHOOSE A CONTENT TEMPLATE' select 'HIGHLIGHT BOX'</li>
+</ul>
+
+//SECTION 5 5
+<h2 id="slide55">Step Five: Content Template: Highlight Box</h2>
+<ul>
+<li>In 'NAME FIELD' enter a name for the content. This will ONLY show in your Site Structure</li> 
+<li>In 'BOX TITLE FIELD' enter the title for the Highlight Box</li>
+	<ul>
+	<li>MAX 40 Characters</li>
+	</ul>
+<li>'BOX CONTENT FIELD: Enter the information you want to appear in your box
+	<ul>
+	<li>MAX 2,400 Characters</li>
+	</ul>
+<li>Click 'ADD'</li>	
+</ul>
+
+//SECTION 6 0
+<h2 id="slide60">Create Vertical Highlight Box</h2>
+
+//Section 6 1
+<h2 id="slide61">Step 1: Logon To Site Manager</h2>
+<ul>
+<li>In your important links choose Site Manager Log In</li>
+<li>Logon to your Site Manager Account</li>
+</ul>
+<a href = 'www.msudenver.edu/sm/' > Site Manager Log In </a> 
+
+//SECTION 6 2
+<h2 id="slide62">Step 2: Create a Right Column</h2>
+<div>If not already done so, create a Right Column</div>
+
+//SECTION 6 3
+<h2 id="slide63">Step 3: Create a Highlight Box</h2>
+<ul>
+<li>Find your 'RIGHT COLUMN' in your Site Structure</li>
+<li>Place your cursor over the 'RIGHT COLUMN's' 'SECTION MENU'</li>
+<li>Choose 'ADD CONTENT'</li>
+<li>Choose 'HIGHLIGHT BOX' Template and fill out necessary information</li>
+<li>Click 'ADD'</li>
+
+//SECTION  6 4
+<h2 id="slide64">Step 4: Change The Root Section Style</h2>
+<ul>
+<li>Navigate to the 'ROOT SECTION' which contains the 'RIGHT COLUMN' section you have created</li>
+<li>Place cursor over 'SECTION MENU' next to the 'ROOT SECTION'</li>
+<li>Choose 'MODIFY SECTION' from the dropdown list</li>
+</ul>
+
+//IMAGE FOR 64 - PUT BELOW TEXT 
+<img src = 'http://www.msudenver.edu/media/content/technologytraining/sitemanager/verticalhighlightbox/img10-476x148.jpg'>
+
+//SECTION 6 5
+<h2 id="slide65"> Step 5: Change The Style</h2>
+<ul>
+<li>Click the 'STYLES' Tab</li>
+<li>Under 'STYLE' click the down arrow of the second box and choose '3 COLUMN' Option </li>
+<li>Click 'UPDATE'</li>
+</ul>
+
+//IMAGE FOR 65 - PUT BELOW TEXT
+<img src = 'http://www.msudenver.edu/media/content/technologytraining/sitemanager/verticalhighlightbox/img11.jpg'>
+
+//SECTION 6 6 
+<h2 id="slide66"> Step 6: Preview the Right-Column Highlight Box</h2>
+<ul>
+<li>Go to the 'ROOT SECTION' which contains the 'RIGHT COLUMN' section you created </li>
+<li>Go to that sections 'SECTION MENU'</li>
+<li>Click 'PREVIEW SECTION' from the dropdown box</li>
+</ul>
+
+//IMAGE FOR 66 - PUT BELOW TEXT
+<img src = 'http://www.msudenver.edu/media/content/technologytraining/sitemanager/verticalhighlightbox/img12.jpg'>
+
+//SECTION 7 0
+<h2 id="slide70">Embed Facebook Feed</h2>
+<a href = 'www.facebook.com target="_blank"> Facebook </a> <br> <a
+
+//SECTION 7 1
+<h2 id="slide71">Step 1: Logon To Site Manager</h2>
+<ul>
+<li>In your important links choose Site Manager Log In</li>
+<li>Logon to your Site Manager Account</li>
+</ul>
+<a href = 'www.msudenver.edu/sm/> Site Manager Log In </a> <br> <a href = www.facebook.com > Facebook </a>
+
+//SECTION 7 2 
+<h2 id="slide72">Find Facebook ID Number</h2>
+<div>Your 'FACEBOOK ID NUMBER' can be found on the profile URL address, on the profile picture URL address, or on the notes URL address</div>
+<div>There are two methods you can utilize to find your Facebook ID number</div>
+
+//Section 7 3
+<h2 id="slide73">Methods for Finding Your Facebook Feed</h2>
+
+//SECTION 7 4
+<h2 id="slide74">Method 1: Unknown Facebook Username</h2>
+<ul>
+<li>Login to your 'Facebook Account'</li>
+<li>Click in the profile picture associate with the account</li>
+<li>On your browser address bar, on top of the browser, there will be 'ID=XXXXXX'</li>
+	<ul>
+	<li>The 'XXXXXX' is your ID number</li>
+	</ul>
+</ul>
+<img src = 'http://www.msudenver.edu/media/content/technologytraining/sitemanager/embedfacebookfeed/img12-600x101.png'>
+
+//SECTION 7 5 
+<h2 id="slide75">Method 2:Existing Facebook Username</h2>
+<ul>
+<li>In the browser address bar enter 'graph.facebook.com/facebook_username'</li>
+<li>Press 'ENTER'</li>
+<img src = 'http://www.msudenver.edu/media/content/technologytraining/sitemanager/embedfacebookfeed/img10-517x145.png'>
+
+//SECTION 76
+<h2 id="slide76">Method Two Continued</h2>
+<div>In the text page, look for the line 'ID': 'XXXXXX'</div>
+<ul>
+<li>This 'XXXXXX' is your ID number</li>
+</ul>
+<img src = 'http://www.msudenver.edu/media/content/technologytraining/sitemanager/embedfacebookfeed/img11-517x155.png'>
+
+//SECTION 77
+<h2 id="slide76">Set Facebook Username</h2>
+<ul>
+<li>Logon to your 'FACEBOOK' account</li>
+<li>Go to 'ACCOUNT SETTINGS'</li>
+<img src = 'http://www.msudenver.edu/media/content/technologytraining/sitemanager/embedfacebookfeed/img1-600x141.png'>
+
+//SECTION 78
+<h2 id="slide78">Set Facebook Username Cont'd</h2>
+<ul>
+<li>In 'ACCOUNT SETTINGS' page, click 'GENERAL'</li>
+</ul>
+<img src = 'http://www.msudenver.edu/media/content/technologytraining/sitemanager/embedfacebookfeed/img2-308x357.png'>
+
+//SECTION 79
+<h2 id="slide79">Set Facebook Username Cont'd</h2>
+<ul>
+<li>Under 'GENERAL ACCOUNT SETTINGS' do the following</li>
+	<ul>
+	<li>At the 'USERNAME' entry, click 'EDIT' link</li>
+	<li>Enter the desired username in the textbox after the script 'http://www.facebook.com/</li>
+	<li>Enter your Facebook accoount password</li>
+	<li>Click 'SAVE CHANGES' button</li>
+	</ul>
+</ul>
+
+//IMAGES THAT GO WITH SECTION 7 SLIDE 9
+<img src = 'http://www.msudenver.edu/media/content/technologytraining/sitemanager/embedfacebookfeed/img3-600x178.png'>
+<img src = 'http://www.msudenver.edu/media/content/technologytraining/sitemanager/embedfacebookfeed/img4-600x244.png'>
+
+//SECTION 7 SLIDE 10
+<h2 id="slide710"> Finding Facebook Username After Creating One
+<ul> 
+<li>Click on your Facebook picture profile</li>
+<li>On the browser address bar on top of your browser your username will be found after 'https://www.facebook.com</li>
+</ul>
+
+//IMAGE FOR SECTION 7 SLIDE 10
+<img src = 'http://www.msudenver.edu/media/content/technologytraining/sitemanager/embedfacebookfeed/img5-600x162.png'>
+
+//SECTION 7 SLIDE 11
+<h2 id="slide711">Embeding Facebook Feed To Your Site</h2>
+<h3 id="slide711">Step One</h3>
+<ul>
+<li>In your important links choose Site Manager Log In</li>
+<li>Logon to your Site Manager Account</li>
+</ul>
+
+//SECTION 7 SLIDE 12
+<h2 id="slide712">Step Two</h2>
+<ul>
+<li> In your Site Structure find the section you would like to add the feed too</li>
+<li>Place cursor over the 'SECTION MENU'</li>
+<li>Click 'ADD CONTENT' from dropdown list</li>
+<li>Under 'CHOOSE CONTENT TEMPLATE PAGE' select 'FACEBOOK FEED'</li>
+</ul>
+
+//IMAGE FOR SECTION 7 SLIDE 12
+<img src = 'http://www.msudenver.edu/media/content/technologytraining/sitemanager/embedfacebookfeed/img6-600x229.png'>
+<img src = 'http://www.msudenver.edu/media/content/technologytraining/sitemanager/embedfacebookfeed/img7-600x314.png'>
+
+//SECTION 7 SLIDE 13
+<h2 id="slide713">Step Three: Content Tab</h2>
+<ul>
+<li>NAME FIELD: Enter name for content. Will only show in your Site Structure</li>
+<li>FACEBOOK ID FIELD: Enter or paste your 'FACEBOOK ID NUMBER' here</li>
+<li>WIDTH AND HEIGHT FIELD: Enter size of feed. 
+	<ul>
+	<li>Recommended size is 600px by 700px)</li>
+	</ul>
+<li>CONNECTIONS FIELD: Enter the number of connections here</li>
+	<ul>
+	<li>Recommended: 10 CONNECTIONS</li>
+	<li>NOTE: For reduced size of feed lower the number of CONNECTIONS</li>
+	</ul>
+<li>Click 'ADD'</li> 
+</ul>
+
+//IMAGE FOR SECTION 7 SLIDE 13
+<img src = 'http://www.msudenver.edu/media/content/technologytraining/sitemanager/embedfacebookfeed/img8-600x317.png'>
+
+//SECTION 7 SLIDE 14
+<h2 id="slide714">How The Feed Will Appear</h2>
+<div>Your Feed will look like the below picture on your website</div>
+//IMAGE FOR SECTION 7 SLIDE 14 BELOW TEXT
+<img src ='http://www.msudenver.edu/media/content/technologytraining/sitemanager/embedfacebookfeed/img9-600x600.png'>
+
+//SECTION 80
+<h2 id="slide80">Embed Twitter Feed</h2>
+<a href = 'www.msudenver.edu/sm/> Site Manager Log In </a> <br> <a href = www.twitter.com > Twitter </a>
+
+//SECTION 81
+<h2 id="slide81">Step One</h2>
+<ul>
+<li>In your important links choose Site Manager Log In</li>
+<li>Logon to your Site Manager Account</li>
+</ul>
+
+//SECTION 82
+<h2 id="slide82">Step Two</h2>
+<ul>
+<li> In your Site Structure find the section you would like to add the feed too</li>
+<li>Place cursor over the 'SECTION MENU'</li>
+<li>Click 'ADD CONTENT' from dropdown list</li>
+<li>Under 'CHOOSE CONTENT TEMPLATE PAGE' select 'TWITTER FEED'</li>
+</ul>
+
+//SECTION 83
+<h2 id="slide83">Step Three</h2>
+<ul>
+<li>NAME: Enter a name for the content</li>
+	<ul>
+	<li>This will show only in your Site Structure</li>
+	</ul>
+<li>TWITTER ID: Put your Twitter ID in this field</li>
+	<ul>
+	<li>Your Twitter ID will be your Twitter USER ID</li>
+	</ul>
+<li>Choose 'ADD' 'PREVIEW' or 'CANCEL' to cancel all changes</li>
+</ul>
+
+//I NEED TO ADD AN IMAGE TO SECTION 83. WILL DO SO WEDNESDAY 4/3
+
+/*SECTION 90
+ *NEED TO ADD IMAGES
+ */
+<h2 id="slide90">Embed YouTube Videos</h2>
+<div>This section will cover how to embed not only You Tube vidoes but also how to manipulate the template itself</div>
+<a href = 'www.msudenver.edu/sm/> Site Manager Log In </a>
+
+//SECTION 91
+<h2 id="slide91">Step One</h2>
+<ul>
+<li>In your important links choose Site Manager Log In</li>
+<li>Logon to your Site Manager Account</li>
+</ul>
+
+//SECTION 92
+<h2 id="slide92">Step Two</h2>
+<ul>
+<li> In your Site Structure find the section you would like to add your video too</li>
+<li>Place cursor over the 'SECTION MENU'</li>
+<li>Click 'ADD CONTENT' from dropdown list</li>
+<li>Under 'CHOOSE CONTENT TEMPLATE PAGE' select 'YOUTUBE CONTENT' Template</li>
+</ul>
+
+//SECTION 93
+<h2 id="slide93">Step Three</h2>
+<ul>
+<li>NAME: Give the content a name</li>
+	<ul>
+	<li>Will only appear in your Site Structure</li>
+	</ul>
+<li>EMBED CODE: Enter the embed code for the video</li>
+	<ul>
+	<li>NOTE: Embed code DOES NOT need to come from YouTube</li>
+	</ul>
+</ul>
+
+//SECTION 94 - WILL ADD THIS INFO LATER 
+<h2 id="slide94">How To Find The Embed Code On YouTube</h2>
+
+//SECTION 100
+<h2 id="slide100">Insert Flickr Gallery</h2>
+<a href = 'www.msudenver.edu/sm/> Site Manager Log In </a> <br> <a href = www.flickr.com > Flickr
+
+//SECTION 101
+<h2 id="slide101">Step One</h2>
+<ul>
+<li>In your important links choose Site Manager Log In</li>
+<li>Logon to your Site Manager Account</li>
+</ul>
+
+//SECTION 102
+<h2 id="slide102">Step Two</h2>
+<ul>
+<li>In Site Structure find the section you want to add Flickr Gallery to</li>
+<li>Move cursor over to the 'SECTION MENU'</li>
+<li>Choose 'ADD CONTENT' from the dropdown menu</li>
+</ul>
+<img src = 'http://www.msudenver.edu/media/content/technologytraining/sitemanager/insertflickrgallery/img1-600x227.png'>
+
+//SECTION 103
+<h2 id="slide103">Step Three: Choose Template</h2>
+<div>Under 'CHOOSE A CONTENT TEMPLATE' click on 'FLICKR GALLERY'</div>
+<img src ='http://www.msudenver.edu/media/content/technologytraining/sitemanager/insertflickrgallery/img2-600x327.png'>
+
+//SECTION 104
+<h2 id="slide104>Step Four: Content Tab</h2>
+<ul>
+<li>NAME FIELD: Enter a name for the peice of content.
+	<ul>
+	<li>Name will only appear in your Site Structure</li>
+	</ul>
+<li>PHOTO TAGS FIELD: 
+	<ul>
+	<li>Open a web browser of your choosing</li>
+	<li>In the address bar type 'idgettr.com and press 'ENTER'</li>
+	<liv>'Replace 'USERNAME' file path with the desired Flick username</li>
+<img src = 'http://www.msudenver.edu/media/content/technologytraining/sitemanager/insertflickrgallery/img3-600x271.png'> 
+	<liv>Click the 'FIND' button</li>
+<img src = 'http://www.msudenver.edu/media/content/technologytraining/sitemanager/insertflickrgallery/img4-600x290.png'>
+	<liv>'COPY' the number after the 'ID'</li>
+<img src = 'http://www.msudenver.edu/media/content/technologytraining/sitemanager/insertflickrgallery/img5-600x298.png'>
+
+//SECTION 105
+<h2 id="slide105">Photo Tags cont'd</h2>
+<ul>
+<li>In the 'Photo Tags' Field, 'PASTE' the tag name of the gallery</li>
+		<ul>
+		<li>On the Flickr webpage, click 'TAG' link</li>
+<img src = 'http://www.msudenver.edu/media/content/technologytraining/sitemanager/insertflickrgallery/img6-600x173.png'>\
+		<li> Click the desired tag name	</li>		
+<img src = 'http://www.msudenver.edu/media/content/technologytraining/sitemanager/insertflickrgallery/img7-600x353.png'>
+		<li> 'COPY' the tag name on the URL</li>
+<img src = 'http://www.msudenver.edu/media/content/technologytraining/sitemanager/insertflickrgallery/img8-600x228.png'>
+		</ul>
+</ul>
+
+//Section 106
+<h2 id="slide106">Width and Height
+<div>Enter the size of the Flickr Gallery</div/
+	<ul>
+	<li>Click 'ADD' or 'Cancel to cancel all changes'</li>
+	</ul/
+<img src = 'http://www.msudenver.edu/media/content/technologytraining/sitemanager/insertflickrgallery/img9-600x277.png'>
